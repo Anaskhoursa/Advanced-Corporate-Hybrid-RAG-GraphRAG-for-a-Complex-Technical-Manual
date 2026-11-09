@@ -82,7 +82,13 @@ TRIVIAL_RELATION_PATTERNS = [
 
 
 
-client = Groq(api_key="")
+GROQ_API_KEY = os.environ.get(
+    "GROQ_API_KEY", ''
+
+)
+if not GROQ_API_KEY:
+    raise RuntimeError("GROQ_API_KEY environment variable is not set.")
+client = Groq(api_key=GROQ_API_KEY)
 
 # --------------------------------------------------------------------------
 # Rate Limiter & Caching

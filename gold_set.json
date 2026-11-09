@@ -1,0 +1,584 @@
+[
+  {
+    "id": "q01",
+    "question": "What does the DANGER hazard level mean?",
+    "category": "safety",
+    "answerable": true,
+    "expected_chunks": ["1.2"],
+    "required_facts": ["death or serious injury"],
+    "verified": true,
+    "note": "Verified from PDF page 6, section 1.2 Hazard levels table: 'DANGER: A hazardous situation which, if not avoided, will result in death or serious injury.'"
+  },
+  {
+    "id": "q02",
+    "question": "What does the CAUTION hazard level indicate?",
+    "category": "safety",
+    "answerable": true,
+    "expected_chunks": ["1.2"],
+    "required_facts": ["minor or moderate injury"],
+    "verified": true,
+    "note": "Verified from PDF page 6, section 1.2: 'CAUTION: A hazardous situation which, if not avoided, could result in minor or moderate injury.'"
+  },
+  {
+    "id": "q03",
+    "question": "What is the maximum temperature batteries can be exposed to?",
+    "category": "safety",
+    "answerable": true,
+    "expected_chunks": ["1.5"],
+    "required_facts": ["85"],
+    "verified": true,
+    "note": "Verified from PDF page 7, section 1.5 WARNING: 'Do not crush, puncture, short, or expose batteries to a temperature above +85°C (185°F).'"
+  },
+  {
+    "id": "q04",
+    "question": "What safety equipment should personnel wear when working on the pump?",
+    "category": "safety",
+    "answerable": true,
+    "expected_chunks": ["1.3"],
+    "required_facts": ["goggles", "gloves"],
+    "verified": true,
+    "note": "Verified from PDF page 7, section 1.3 User safety: 'Examples of personal protective equipment include, but are not limited to, hard hats, safety goggles, protective gloves and shoes, and breathing equipment.'"
+  },
+  {
+    "id": "q05",
+    "question": "Is it safe to use non-Xylem spare parts?",
+    "category": "safety",
+    "answerable": true,
+    "expected_chunks": ["1.6", "1.1"],
+    "required_facts": [["void the warranty", "malfunctions", "death", "personal injury"]],
+    "verified": true,
+    "note": "Verified from PDF pages 6 and 8. 1.6 CAUTION: 'The use of unsuitable spare parts may cause malfunctions, damage, and injuries as well as void the warranty.' 1.1 WARNING: 'use of parts not provided by Xylem... could cause death, serious personal injury.'"
+  },
+  {
+    "id": "q06",
+    "question": "How should I lift the pump unit using a crane?",
+    "category": "procedural",
+    "answerable": true,
+    "expected_chunks": ["2.2.5.2"],
+    "required_facts": [["cables or hose", "lifting equipment"]],
+    "verified": true,
+    "note": "Verified from PDF page 11, section 2.2.5.2 'Lift unit using a crane'. Also 2.2.5 NOTICE: 'Never lift the unit by its cables or hose.'"
+  },
+  {
+    "id": "q07",
+    "question": "What should I check before each trailer journey?",
+    "category": "procedural",
+    "answerable": true,
+    "expected_chunks": ["6.10.1"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified from PDF page 42, section 6.10.1 'Before each journey'."
+  },
+  {
+    "id": "q08",
+    "question": "What is the maximum nose weight for the trailer?",
+    "category": "factual",
+    "answerable": true,
+    "expected_chunks": ["2.2.2"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified from PDF page 9, section 2.2.2: 'The maximum nose weight is shown on the coupling itself.' No numeric value is given in the manual, so the correct answer is that it is shown on the coupling."
+  },
+  {
+    "id": "q09",
+    "question": "How often should I check tire pressures on the trailer?",
+    "category": "procedural",
+    "answerable": true,
+    "expected_chunks": ["6.10.1"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified from PDF page 42, section 6.10.1: 'Check tire pressures' is listed under 'Before each journey'. No specific interval beyond 'before each journey' is given."
+  },
+  {
+    "id": "q10",
+    "question": "What precautions should I take before disconnecting the trailer from the towing vehicle?",
+    "category": "safety",
+    "answerable": true,
+    "expected_chunks": ["2.2.3"],
+    "required_facts": ["prop stands"],
+    "verified": true,
+    "note": "Verified from PDF page 10, section 2.2.3 CAUTION: 'Tip hazard. Make sure that the prop stands are lowered and locked in place before disconnecting trailer.'"
+  },
+  {
+    "id": "q11",
+    "question": "What materials is the pump made of?",
+    "category": "factual",
+    "answerable": true,
+    "expected_chunks": ["3.1"],
+    "required_facts": ["stainless"],
+    "verified": true,
+    "note": "Verified from PDF page 14, section 3.1: 'Iron, Steel, Stainless steel, Aluminium'."
+  },
+  {
+    "id": "q12",
+    "question": "What is the maximum pressure for the HL125M?",
+    "category": "factual",
+    "answerable": true,
+    "expected_chunks": ["3.2", "8.1"],
+    "required_facts": ["13.5 bar"],
+    "verified": true,
+    "note": "Verified from PDF pages 15 and 51. 3.2 and 8.1 both list HL125M max pressure = 13.5 bar (196 psi)."
+  },
+  {
+    "id": "q13",
+    "question": "What is the maximum soft solids handling for the HL225M?",
+    "category": "factual",
+    "answerable": true,
+    "expected_chunks": ["3.2", "8.1"],
+    "required_facts": ["65 mm"],
+    "verified": true,
+    "note": "Verified from PDF pages 15 and 51. HL225M soft solids = 65 mm (2.6 in)."
+  },
+  {
+    "id": "q14",
+    "question": "What is the suction size of the HL250M?",
+    "category": "factual",
+    "answerable": true,
+    "expected_chunks": ["3.2", "8.1"],
+    "required_facts": ["300 mm"],
+    "verified": true,
+    "note": "Verified from PDF page 15, Flanges table: HL250M suction = 300 mm (12 in) flange."
+  },
+  {
+    "id": "q15",
+    "question": "What is the maximum working temperature for the HL series?",
+    "category": "factual",
+    "answerable": true,
+    "expected_chunks": ["3.2", "8.1"],
+    "required_facts": ["80°C"],
+    "verified": true,
+    "note": "Verified from PDF pages 15 and 51. 3.2: 'Maximum liquid temperature 80°C (176°F)'. 8.1: all models 80 °C."
+  },
+  {
+    "id": "q16",
+    "question": "How do I perform a vacuum pad test?",
+    "category": "procedural",
+    "answerable": true,
+    "expected_chunks": ["4.1.3"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified from PDF page 19, section 4.1.3 'Vacuum pad test'."
+  },
+  {
+    "id": "q17",
+    "question": "What vacuum range should the pad gauge read during the test?",
+    "category": "factual",
+    "answerable": true,
+    "expected_chunks": ["4.1.3"],
+    "required_facts": ["20 in Hg", "25 in Hg"],
+    "verified": true,
+    "note": "Verified from PDF page 19, section 4.1.3: 'The values must be between 20 in of mercury (0.68 bar) and 25 in of mercury (0.85 bar).'"
+  },
+  {
+    "id": "q18",
+    "question": "What is the minimum distance between the pump inlet flange and the closest elbow?",
+    "category": "factual",
+    "answerable": true,
+    "expected_chunks": ["4.2.2"],
+    "required_facts": [["four pipe diameters", "4 pipe diameters"]],
+    "verified": true,
+    "note": "Verified from PDF page 21, section 4.2.2: 'Check that the distance between the inlet flange of the pump and the closest elbow is at least four pipe diameters.' Deliberately included as a hard precision case."
+  },
+  {
+    "id": "q19",
+    "question": "How do I attach the dial indicators for pump-to-driver alignment?",
+    "category": "procedural",
+    "answerable": true,
+    "expected_chunks": ["4.4.3"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified from PDF page 29, section 4.4.3 'Attach the dial indicators for alignment'."
+  },
+  {
+    "id": "q20",
+    "question": "What are the tolerance values for pump-to-driver alignment?",
+    "category": "factual",
+    "answerable": true,
+    "expected_chunks": ["4.3.3", "4.4.4"],
+    "required_facts": ["3 mils", "5 mils"],
+    "verified": true,
+    "note": "Verified from PDF pages 25 and 29. 4.3.3: 'a tolerance of 3 mills offset and 5 mills gap over a 10 inch coupling'. 4.4.4 covers the alignment procedure. Both chunks should be retrieved."
+  },
+  {
+    "id": "q21",
+    "question": "What type of grout should be used for skid-mounted permanent installations?",
+    "category": "factual",
+    "answerable": true,
+    "expected_chunks": ["4.3.5"],
+    "required_facts": ["epoxy"],
+    "verified": true,
+    "note": "Verified from PDF pages 25–26, section 4.3.5 'Pour the grout': 'Mix epoxy grout components as per the manufacturer's instructions.'"
+  },
+  {
+    "id": "q22",
+    "question": "How do I start the pump?",
+    "category": "procedural",
+    "answerable": true,
+    "expected_chunks": ["5.3"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified from PDF page 36, section 5.3 'Start the pump'."
+  },
+  {
+    "id": "q23",
+    "question": "How do I shut down the pump?",
+    "category": "procedural",
+    "answerable": true,
+    "expected_chunks": ["5.4"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified from PDF page 36, section 5.4 'Shut down the pump'."
+  },
+  {
+    "id": "q24",
+    "question": "What are the steps for operating the pump with flooded suction?",
+    "category": "procedural",
+    "answerable": true,
+    "expected_chunks": ["5.1.2"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified from PDF page 32, section 5.1.2 'Operate the unit with the system condition of flooded suction'."
+  },
+  {
+    "id": "q25",
+    "question": "What are the bearing lubrication requirements?",
+    "category": "factual",
+    "answerable": true,
+    "expected_chunks": ["5.1.3", "8.2"],
+    "required_facts": ["Starplex"],
+    "verified": true,
+    "note": "Verified from PDF pages 32 and 52. 5.1.3 covers the procedure; 8.2 lists recommended bearing lubricants including Texaco Starplex EP2."
+  },
+  {
+    "id": "q26",
+    "question": "What is the mechanical seal coolant capacity for the HL110M?",
+    "category": "factual",
+    "answerable": true,
+    "expected_chunks": ["8.2"],
+    "required_facts": ["4.7 L"],
+    "verified": true,
+    "note": "Verified from PDF page 52, Table 17: HL110M coolant capacity = 4.7 L (1.24 US gal)."
+  },
+  {
+    "id": "q27",
+    "question": "What warnings apply to the coupling?",
+    "category": "safety",
+    "answerable": true,
+    "expected_chunks": ["4.4", "5.2"],
+    "required_facts": ["shaft alignment", "coupling guard"],
+    "verified": true,
+    "note": "Verified from PDF pages 27 and 35. 4.4 WARNING: shaft alignment / lockout. 5.2 CAUTION: 'Never operate a pump without a properly installed coupling guard.'"
+  },
+  {
+    "id": "q28",
+    "question": "Does it need lubrication?",
+    "category": "followup",
+    "answerable": true,
+    "expected_chunks": ["6.10.3"],
+    "required_facts": [],
+    "verified": true,
+    "standalone": "Does the coupling need lubrication?",
+    "note": "Verified from PDF page 43, section 6.10.3 'After every 6000 miles': 'Apply grease to the over-run coupling greasing points.' This is the trailer over-run coupling, which is the coupling most likely meant in the follow-up context."
+  },
+  {
+    "id": "q29",
+    "question": "What about the impeller?",
+    "category": "followup",
+    "answerable": true,
+    "expected_chunks": ["6.9.1"],
+    "required_facts": [],
+    "verified": true,
+    "standalone": "Does the impeller need lubrication?",
+    "note": "Verified from PDF pages 41–42. The impeller does not require routine lubrication; it is inspected at 5000 hours (6.9.1) and its clearance to wear plates is checked (8.5). The 6.9.1 chunk is the closest match for 'what maintenance applies to the impeller'."
+  },
+  {
+    "id": "q30",
+    "question": "What daily maintenance is required for the engine?",
+    "category": "procedural",
+    "answerable": true,
+    "expected_chunks": ["6.2.1"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified from PDF pages 37–38, section 6.2.1 'Engine maintenance'."
+  },
+  {
+    "id": "q31",
+    "question": "What maintenance is performed after the first 100 hours?",
+    "category": "procedural",
+    "answerable": true,
+    "expected_chunks": ["6.3.1"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified from PDF page 38, section 6.3.1 'Air compressor maintenance' under '6.3 After the first 100 hours'. Answer was vague in prior run; steps likely dropped because used_graph=False."
+  },
+  {
+    "id": "q32",
+    "question": "What maintenance is performed after the first 200 hours?",
+    "category": "procedural",
+    "answerable": true,
+    "expected_chunks": ["6.4.1"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified from PDF page 39, section 6.4.1 'Gearbox maintenance' under '6.4 After the first 200 hours'."
+  },
+  {
+    "id": "q33",
+    "question": "What should I check during 250 hour pump maintenance?",
+    "category": "procedural",
+    "answerable": true,
+    "expected_chunks": ["6.5.1"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified from PDF page 39, section 6.5.1 'Pump maintenance' under '6.5 250 hour maintenance'."
+  },
+  {
+    "id": "q34",
+    "question": "What is checked at 5000 hours on the pump?",
+    "category": "procedural",
+    "answerable": true,
+    "expected_chunks": ["6.9.1"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified from PDF pages 41–42, section 6.9.1 'Pump maintenance' under '6.9 5000 hour maintenance'."
+  },
+  {
+    "id": "q35",
+    "question": "What bearing lubricant brands are recommended?",
+    "category": "factual",
+    "answerable": true,
+    "expected_chunks": ["8.2"],
+    "required_facts": ["Starplex", "Nertia", "SHC 46"],
+    "verified": true,
+    "note": "Verified from PDF page 52, section 8.2 'Bearing lubricant': Texaco Starplex EP2, Shell Nertia HV, Mobil SHC 46, Total Multis Complex EP2, Belesta XPG, Valvoline NLGI #2, and Rocol Sapphire Premier for HL260M."
+  },
+  {
+    "id": "q36",
+    "question": "Why does the pump not prime?",
+    "category": "troubleshoot",
+    "answerable": true,
+    "expected_chunks": ["7.2"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified from PDF pages 44–45, Table 1 'Pump does not prime' in section 7.2."
+  },
+  {
+    "id": "q37",
+    "question": "What causes insufficient liquid delivery?",
+    "category": "troubleshoot",
+    "answerable": true,
+    "expected_chunks": ["7.2"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified from PDF pages 45–46, Table 2 'Insufficient liquid is delivered' in section 7.2."
+  },
+  {
+    "id": "q38",
+    "question": "Why does liquid flow cease?",
+    "category": "troubleshoot",
+    "answerable": true,
+    "expected_chunks": ["7.2"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified from PDF pages 46–47, Table 3 'Liquid flow ceases' in section 7.2."
+  },
+  {
+    "id": "q39",
+    "question": "What should I do if the unit vibrates or overheats?",
+    "category": "troubleshoot",
+    "answerable": true,
+    "expected_chunks": ["7.2"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified from PDF page 47, Table 4 'The unit vibrates or overheats' in section 7.2. Kept deliberately as a hard retrieval case."
+  },
+  {
+    "id": "q40",
+    "question": "Why is the mechanical seal coolant emulsified?",
+    "category": "troubleshoot",
+    "answerable": true,
+    "expected_chunks": ["5.1.4", "7.2"],
+    "required_facts": ["emulsification"],
+    "verified": true,
+    "note": "Verified from PDF pages 34 and 48. 5.1.4 NOTICE mentions emulsification of oil is normal under low conditions. 7.2 Table 5 'The mechanical seal coolant is emulsified'."
+  },
+  {
+    "id": "q41",
+    "question": "Why does the driver not start?",
+    "category": "troubleshoot",
+    "answerable": true,
+    "expected_chunks": ["7.3"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified from PDF page 48, Table 7 'The driver does not start' in section 7.3 Troubleshooting - Driver."
+  },
+  {
+    "id": "q42",
+    "question": "What causes one-sided trailer braking?",
+    "category": "troubleshoot",
+    "answerable": true,
+    "expected_chunks": ["7.4"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified from PDF pages 48–49, Table 8 'Braking is one-sided' in section 7.4 Troubleshooting - Trailer."
+  },
+  {
+    "id": "q43",
+    "question": "What should I do if the trailer brakes lock up when reversing?",
+    "category": "troubleshoot",
+    "answerable": true,
+    "expected_chunks": ["7.4"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified from PDF pages 49–50, Table 12 'The trailer brakes lock up when reversing' in section 7.4. Note: original gold set flagged this as a MAX_TABLES_PER_CHUNK=4 truncation issue; the chunk has 9 tables, so this is a valid test case."
+  },
+  {
+    "id": "q44",
+    "question": "What is the normal speed of the HL160M?",
+    "category": "factual",
+    "answerable": true,
+    "expected_chunks": ["8.1"],
+    "required_facts": ["1800"],
+    "verified": true,
+    "note": "Verified from PDF page 51, 8.1 Designations, sizes, and capacities: HL160M normal speed = 1800 rpm."
+  },
+  {
+    "id": "q45",
+    "question": "What is the maximum flow of the HL300M?",
+    "category": "factual",
+    "answerable": true,
+    "expected_chunks": ["8.1", "3.2"],
+    "required_facts": ["1250"],
+    "verified": true,
+    "note": "CORRECTED: HL300M IS in the PDF (8.1 and 3.2 tables). Max flow = 1250 m³/hr (5500 US gpm). This question was previously mislabeled as unanswerable."
+  },
+  {
+    "id": "q46",
+    "question": "What is the torque value for an M12 steel bolt?",
+    "category": "factual",
+    "answerable": true,
+    "expected_chunks": ["8.3"],
+    "required_facts": ["98 Nm"],
+    "verified": true,
+    "note": "Verified from PDF page 53, Metric fasteners table: M12 x 1.75 Steel nuts and bolts = 98 Nm (72 lbf·ft)."
+  },
+  {
+    "id": "q47",
+    "question": "What is the impeller-to-wear-plate clearance for cast iron parts?",
+    "category": "factual",
+    "answerable": true,
+    "expected_chunks": ["8.5"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified from PDF page 55, Table 20: 'Cast iron, cast steel, or Hard-Iron wear plate and impeller: 0.500 mm to 0.625 mm (0.020 in to 0.025 in).' Question is somewhat ambiguous (depends on material rather than model); worth rewriting with a specific material to reduce ambiguity."
+  },
+  {
+    "id": "q48",
+    "question": "What are the air compressor oil requirements?",
+    "category": "factual",
+    "answerable": true,
+    "expected_chunks": ["8.2"],
+    "required_facts": ["Quincy 216"],
+    "verified": true,
+    "note": "Verified from PDF page 52, Table 16: Quincy 216 = Quin-Cip SAE 20W/ISO 68 or equivalent, capacity 1.42 L (0.375 US gal)."
+  },
+  {
+    "id": "q49",
+    "question": "Which HL model has the highest maximum pressure?",
+    "category": "comparison",
+    "answerable": true,
+    "expected_chunks": ["8.1", "3.2"],
+    "required_facts": ["HL270M", "28.3 bar"],
+    "verified": true,
+    "note": "CORRECTED: The answer is HL270M at 28.3 bar (416 psi) — not 42 bar as previously stated. Verified from PDF pages 15 and 51."
+  },
+  {
+    "id": "q50",
+    "question": "Which HL model has the highest maximum flow?",
+    "category": "comparison",
+    "answerable": true,
+    "expected_chunks": ["8.1"],
+    "required_facts": ["HL260M", "1260"],
+    "verified": true,
+    "note": "Verified from PDF page 51: HL260M = 1260 m³/hr (5550 US gpm), the highest in the table."
+  },
+  {
+    "id": "q51",
+    "question": "What is the capital of France?",
+    "category": "off_topic",
+    "answerable": false,
+    "expected_chunks": [],
+    "required_facts": [],
+    "verified": true,
+    "note": "Correct behaviour: the system should classify as out_of_scope and abstain."
+  },
+  {
+    "id": "q52",
+    "question": "How do I reset my email password?",
+    "category": "off_topic",
+    "answerable": false,
+    "expected_chunks": [],
+    "required_facts": [],
+    "verified": true,
+    "note": "Correct behaviour: the system should classify as out_of_scope and abstain."
+  },
+  {
+    "id": "g01",
+    "question": "In which sections does the manual require disconnecting and locking out power before work?",
+    "category": "global",
+    "answerable": true,
+    "expected_chunks": ["2.2.1", "4.4", "5.1", "5.1.2", "6.1", "7.1"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified against PDF pages 9, 27, 31, 32, 37, 44. All six sections contain lockout/tagout requirements."
+  },
+  {
+    "id": "g02",
+    "question": "Where does the manual warn about fire hazards from overloaded electrical circuits?",
+    "category": "global",
+    "answerable": true,
+    "expected_chunks": ["4.1.1", "5.1", "6.1"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified against PDF pages 18, 31, 37. All three sections contain the 'Fire hazard. Overloaded electrical circuits...' WARNING."
+  },
+  {
+    "id": "g03",
+    "question": "Which sections warn against throttling the flow from the suction side?",
+    "category": "global",
+    "answerable": true,
+    "expected_chunks": ["4.2.1", "4.2.2", "5.2"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified against PDF pages 20, 21, 35. 4.2.1 and 4.2.2 CAUTION, and 5.2 CAUTION all say 'Never throttle the flow from the suction side.'"
+  },
+  {
+    "id": "g04",
+    "question": "Where does the manual warn about exposing an idle pump to freezing conditions?",
+    "category": "global",
+    "answerable": true,
+    "expected_chunks": ["2.3", "5.2"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified against PDF pages 13 and 35. Both sections contain the NOTICE: 'Do not expose an idle pump to freezing conditions. Drain all liquid...'"
+  },
+  {
+    "id": "g05",
+    "question": "Which sections tell you to let components cool before handling them?",
+    "category": "global",
+    "answerable": true,
+    "expected_chunks": ["6.1", "7.1"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified against PDF pages 37 and 44. 6.1 CAUTION: 'Allow all system and pump components to cool before you handle them'. 7.1 CAUTION: same."
+  },
+  {
+    "id": "g06",
+    "question": "Where does the manual warn about applying pressure or compressed air to test for leaks?",
+    "category": "global",
+    "answerable": true,
+    "expected_chunks": ["4.1.3", "6.1", "7.1"],
+    "required_facts": [],
+    "verified": true,
+    "note": "Verified against PDF pages 19, 37, 44. All three sections contain the 'Compressed Gas Hazard. Never apply a pressure to any cavity or chamber in the product to test for leakage.' WARNING."
+  }
+]

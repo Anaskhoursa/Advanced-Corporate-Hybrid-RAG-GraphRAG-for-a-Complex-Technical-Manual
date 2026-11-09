@@ -55,7 +55,7 @@ CHUNKS_PATH = "all_chunks.json"
 QDRANT_API_KEY = None
 
 import os
-QDRANT_URL      = os.environ.get("QDRANT_URL", "http://qdrant:6333")
+QDRANT_URL      = os.environ.get("QDRANT_URL", "http://localhost:6333")
 COLLECTION_NAME = os.environ.get("QDRANT_COLLECTION", "pump_assembly")
 
 # ---------------------------------------------------------------------------

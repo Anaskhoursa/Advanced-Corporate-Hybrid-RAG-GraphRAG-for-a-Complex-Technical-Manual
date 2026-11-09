@@ -1,0 +1,1179 @@
+{
+  "cache_version": 2,
+  "created_at": "2026-10-30T16:17:01",
+  "entries": {
+    "ccf4d2991ef5109e": {
+      "standalone_query": "What does the DANGER hazard level mean?",
+      "intent": "factual",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": false,
+      "linked_entities": [
+        "danger"
+      ],
+      "chunk_ids": [
+        "1.2",
+        "2.2.1",
+        "5.1",
+        "6.1",
+        "1.3",
+        "7.1",
+        "2.2.3",
+        "1.4"
+      ],
+      "answer": "The **DANGER** hazard level indicates a situation that is **“a hazardous situation which, if not avoided, will result in death or serious injury.”** [1.2 | p.4-4]",
+      "latency_s": 3.5273147000116296
+    },
+    "7b58cee6a301c8ab": {
+      "standalone_query": "What does the CAUTION hazard level indicate?",
+      "intent": "factual",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": false,
+      "linked_entities": [
+        "caution"
+      ],
+      "chunk_ids": [
+        "1.2",
+        "1.3",
+        "2.2.3",
+        "6.2.1",
+        "2.2.1",
+        "6.1",
+        "5.1",
+        "1.6"
+      ],
+      "answer": "The CAUTION hazard level means that the situation is hazardous, and if it is not avoided it could cause **minor or moderate injury**【1.2 | p.4-4】.",
+      "latency_s": 12.66654499998549
+    },
+    "663c65917ec2c171": {
+      "standalone_query": "What is the maximum temperature batteries can be exposed to?",
+      "intent": "factual",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": false,
+      "linked_entities": [],
+      "chunk_ids": [
+        "1.5",
+        "2.3",
+        "3.2",
+        "8.1",
+        "5.2",
+        "1.3",
+        "4.2.1",
+        "1.2"
+      ],
+      "answer": "The batteries must not be exposed to temperatures higher than **+85 °C (185 °F)**【1.5 | p.5-5】. This limit is stated in the battery‑safety warning.",
+      "latency_s": 69.72786530002486
+    },
+    "0a5a6319f84c4240": {
+      "standalone_query": "What safety equipment should personnel wear when working on the pump?",
+      "intent": "safety",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": true,
+      "linked_entities": [
+        "pump"
+      ],
+      "chunk_ids": [
+        "1.3",
+        "4.1.1",
+        "6.1",
+        "2.2.5",
+        "4.2.1",
+        "2.3.2",
+        "5.1.3",
+        "5.1.1"
+      ],
+      "answer": "Personnel should use personal protective equipment (PPE) when working on the pump.  The manual lists the following examples of PPE that should be worn:\n\n* Hard hat  \n* Safety goggles  \n* Protective gloves  \n* Protective shoes (foot protection)  \n* Breathing equipment (e.g., respirator)  \n\nThese items are called out explicitly in the “Protective equipment and safety devices” section of the manual【1.3 | p.5-5】.  Additional cautions in the maintenance section also remind workers to wear protective gloves and protective clothing when handling pump components【6.1 | p.35-35】.",
+      "latency_s": 58.8055576000188
+    },
+    "fb0bb5b0125d0b50": {
+      "standalone_query": "Is it safe to use non-Xylem spare parts?",
+      "intent": "safety",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": false,
+      "linked_entities": [],
+      "chunk_ids": [
+        "1.6",
+        "1.5",
+        "1.1",
+        "6.10.1",
+        "6.9.1",
+        "7.2",
+        "7.4",
+        "6.8.1"
+      ],
+      "answer": "No. The manual states that only the manufacturer’s original spare parts should be used. Using “unsuitable” (i.e., non‑Xylem) parts can cause malfunctions, damage, injuries and will void the warranty【1.6 | p.6-6】. It also warns that any modification or use of parts not provided by Xylem could lead to death, serious personal injury, or equipment damage【1.1 | p.4-4】.",
+      "latency_s": 66.82657449998078
+    },
+    "a6fa740981acce0b": {
+      "standalone_query": "How should I lift the pump unit using a crane?",
+      "intent": "procedural",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 1,
+      "used_graph": false,
+      "linked_entities": [
+        "pump_unit",
+        "crane"
+      ],
+      "chunk_ids": [
+        "2.2.5",
+        "4.1.1",
+        "5.3",
+        "4.3.2",
+        "4.2.3",
+        "2.2.2",
+        "7.2",
+        "5.1.2"
+      ],
+      "answer": "**Procedure for lifting the pump unit with a crane**\n\n1. **Inspect the lifting gear** – Before any lift, inspect the crane, hook, tackle and slings and be sure they are in good condition and rated for the full weight of the unit (including any remaining pumped liquid). [2.2.5 | p.9-9]\n2. **Verify crane capacity** – Confirm that the crane’s lifting capacity exceeds the complete weight of the assembly and any pumped liquid. [2.2.5 | p.9-9]\n3. **Check site conditions** – Ensure the area where the unit will be lifted and set down is clean, level and free of debris that could damage the bottom structure. [2.2.5 | p.9-9]\n4. **Use the designated lifting points** – Attach a suitable lifting strap or sling **only** to the unit’s designated lifting points (never to cables or hoses). [2.2.5 | p.9-9]\n5. **Position the crane** – When a crane is used, make sure the minimum height between the lifting hook and the ground is sufficient to lift the unit straight up and down. [2.2.5 | p.9-9]\n6. **Secure the strap/sling** – Fasten the lifting strap or sling firmly to the available lifting points. [2.2.5 | p.9-9]\n7. **Remove any transport restraints** – If the unit is still on a pallet, flat‑bed or other transport surface, cut the transportation straps before the lift. [2.2.5 | p.9-9]\n8. **Lift the unit** – Raise the unit with the crane using the attached sling, keeping the load vertical (no tilting) and maintaining a clear area around the suspended load. [2.2.5 | p.9-9]\n9. **Place the unit** – Lower the unit onto a firm, level ground at the installation site. [2.2.5 | p.9-9]\n\n**Relevant warnings**\n- **General lifting warning** – “Lift and handle the product carefully, using suitable lifting equipment.” [2.2.5 | p.9-9]\n- **Prohibited lifting points** – “Never lift the unit by its cables or hose.” [2.2.5 | p.9-9]\n- **Heavy‑equipment warning** – “Assembled units and their components are heavy. Failure to properly lift and support this equipment can result in serious physical injury and/or equipment damage. Lift equipment only at the specifically identified lifting points.” [4.1.1 | p.16-16]\n\nFollow these steps and heed the warnings to lift the pump unit safely with a crane.",
+      "latency_s": 169.036778699985
+    },
+    "e4e45cc5d31d8c07": {
+      "standalone_query": "What should I check before each trailer journey?",
+      "intent": "safety",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": false,
+      "linked_entities": [
+        "trailer"
+      ],
+      "chunk_ids": [
+        "2.2.2",
+        "6.10.1",
+        "6.10.2",
+        "6.10.5",
+        "6.10.4",
+        "7.4",
+        "6.10.3",
+        "2.2.3"
+      ],
+      "answer": "**Before each trailer journey you should perform the following checks** [6.10.1 | p.40-40]:\n\n- **Visually inspect the trailer, tires and wheels for any damage** and replace any damaged components.  \n- **If a wheel is damaged, also inspect the brake drum and the axles for damage.**  \n- **Check the wheel nuts or bolts** and tighten them as necessary.  \n- **Check the connection to the towing vehicle** – move the towing eye or ball by hand forwards, backwards, up and down to look for excessive movement; replace any damaged parts.  \n- **Check tire pressures** and adjust to the correct values.  \n- **Verify the hand‑brake operation and effectiveness** by applying it in safe conditions; if it is ineffective, adjust the braking system as described in the service manual.  \n- **Check all trailer lights**; replace any inoperable bulbs and damaged lenses.  \n- **If the trailer is fitted with a 50 mm ball head, ensure it is adequately lubricated.**  ",
+      "latency_s": 46.904110599978594
+    },
+    "69ec381f7dc92847": {
+      "standalone_query": "What is the maximum nose weight for the trailer?",
+      "intent": "factual",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": false,
+      "linked_entities": [
+        "trailer"
+      ],
+      "chunk_ids": [
+        "2.2.2",
+        "2.2.4",
+        "2.2.3",
+        "2.3",
+        "3.2",
+        "6.10.5",
+        "8.1",
+        "2.2.5"
+      ],
+      "answer": "The manual does not list a numeric value for the trailer’s maximum nose‑weight. It states that the nose‑weight must stay “beneath the maximum nose weight” and that **the maximum nose weight is shown on the coupling itself**【2.2.2 | p.7-7】. No other section provides a specific figure.",
+      "latency_s": 70.45988459998625
+    },
+    "159e09978a0ffd3c": {
+      "standalone_query": "How often should I check tire pressures on the trailer?",
+      "intent": "procedural",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": false,
+      "linked_entities": [
+        "trailer"
+      ],
+      "chunk_ids": [
+        "6.10.1",
+        "6.10.5",
+        "6.10.2",
+        "2.2.2",
+        "6.10.4",
+        "7.4",
+        "6.10.3",
+        "6.2.4"
+      ],
+      "answer": "You should check the trailer’s tire pressures **before every journey** – i.e., each time you set out with the trailer. [6.10.1 | p.40-40]",
+      "latency_s": 50.78567899999325
+    },
+    "abdfd46977ddf315": {
+      "standalone_query": "What precautions should I take before disconnecting the trailer from the towing vehicle?",
+      "intent": "safety",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 1,
+      "used_graph": false,
+      "linked_entities": [
+        "precautions",
+        "trailer"
+      ],
+      "chunk_ids": [
+        "2.2.3",
+        "2.2.2",
+        "6.10.1",
+        "2.2.1",
+        "2.2.4",
+        "5.2",
+        "6.10.5",
+        "7.1"
+      ],
+      "answer": "Before you disconnect the trailer from the towing vehicle, the manual specifies one essential precaution:\n\n- **Lower and lock the prop stands** – The trailer’s prop stands must be fully lowered and securely locked to eliminate the tip hazard that can occur when the trailer is separated from the tow vehicle. [2.2.3 | p.8-8]",
+      "latency_s": 84.16595709999092
+    },
+    "33c500806af4c96e": {
+      "standalone_query": "What materials is the pump made of?",
+      "intent": "factual",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": true,
+      "linked_entities": [
+        "pump"
+      ],
+      "chunk_ids": [
+        "3.1",
+        "4.3.2",
+        "3.2",
+        "5.2",
+        "2.1",
+        "8.1",
+        "2.3.1",
+        "2.3.2"
+      ],
+      "answer": "The pump is constructed from a combination of the following materials:\n\n- Iron  \n- Steel  \n- Stainless steel  \n- Aluminium  \n\nThese materials are listed in the product description section of the manual【3.1 | p.12-12】.",
+      "latency_s": 78.03363119999995
+    },
+    "8f17182bec91b99a": {
+      "standalone_query": "What is the maximum pressure for the HL125M?",
+      "intent": "factual",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": false,
+      "linked_entities": [
+        "hl125m"
+      ],
+      "chunk_ids": [
+        "3.2",
+        "8.1",
+        "8.4.3",
+        "8.5",
+        "4.2.1",
+        "7.1",
+        "8.2",
+        "2.2.2"
+      ],
+      "answer": "The HL125M is rated for a **maximum pressure of 13.5 bar (196 psi)**【3.2 | p.13-13】【8.1 | p.49-49】.\n\n**Relevant warning**  \n- **[CAUTION]** Use pipes suited to the maximum working pressure of the pump. Failure to do so can cause the system to rupture, with the risk of injury【4.2.1 | p.18-18】.",
+      "latency_s": 81.03452859999379
+    },
+    "218c3d0a4452b86b": {
+      "standalone_query": "What is the maximum soft solids handling for the HL225M?",
+      "intent": "factual",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": false,
+      "linked_entities": [
+        "hl225m"
+      ],
+      "chunk_ids": [
+        "3.2",
+        "8.1",
+        "8.5",
+        "4.2.1",
+        "8.4.3",
+        "8.2",
+        "1.4",
+        "2.2.2"
+      ],
+      "answer": "The HL225M is rated for a maximum soft‑solids handling size of **65 mm (2.6 in)**【3.2 | p.13-13】. This same value is listed in the design‑specifications table for the pump【8.1 | p.49-49】.",
+      "latency_s": 75.56001429999014
+    },
+    "cb7c7645505d0802": {
+      "standalone_query": "What is the suction size of the HL250M?",
+      "intent": "factual",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": false,
+      "linked_entities": [
+        "hl250m"
+      ],
+      "chunk_ids": [
+        "3.2",
+        "8.4.3",
+        "4.2.2",
+        "8.5",
+        "4.1.3",
+        "3.1",
+        "8.1",
+        "7.2"
+      ],
+      "answer": "The HL250M is equipped with a **300 mm (12 in) flange on the suction side**【3.2 | p.13-13】.",
+      "latency_s": 97.73378440001397
+    },
+    "35ece9b0957536de": {
+      "standalone_query": "What is the maximum working temperature for the HL series?",
+      "intent": "factual",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": false,
+      "linked_entities": [
+        "hl_series"
+      ],
+      "chunk_ids": [
+        "8.1",
+        "3.2",
+        "4.2.1",
+        "8.2",
+        "6.4.1",
+        "8.4.2",
+        "4.3.4",
+        "8.5"
+      ],
+      "answer": "The HL series pumps are rated for a maximum working (liquid) temperature of **80 °C (176 °F)**【8.1 | p.49-49】. This same limit is given in the general operation specifications table for the series【3.2 | p.13-13】.",
+      "latency_s": 74.54185920002055
+    },
+    "3df46ab3b3c6e570": {
+      "standalone_query": "How do I perform a vacuum pad test?",
+      "intent": "procedural",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": true,
+      "linked_entities": [
+        "vacuum_pad_test"
+      ],
+      "chunk_ids": [
+        "4.1.3",
+        "6.5.1",
+        "6.5.5",
+        "7.2",
+        "6.7.2",
+        "6.2.2",
+        "6.2.1",
+        "4.1.2"
+      ],
+      "answer": "**Vacuum‑pad test procedure**\n\n1. **Close the volute drain valve.**【4.1.3 | p.17-17】  \n2. **Close the drain valve on the check valve.**【4.1.3 | p.17-17】  \n3. **Start the driver and allow it to warm up while idling.**【4.1.3 | p.17-17】  \n4. **Place the vacuum pad on the pump suction flange.**【4.1.3 | p.17-17】  \n5. **Verify that the gasket pad fits tightly around the edge.**【4.1.3 | p.17-17】  \n6. **Increase the driver speed to the operating speed.**【4.1.3 | p.17-17】  \n7. **Record the vacuum‑pad gauge reading.** The reading must be **between 20 in Hg (0.68 bar) and 25 in Hg (0.85 bar).**【4.1.3 | p.17-17】  \n8. **Open the drain valve to release the vacuum pad.**【4.1.3 | p.17-17】\n\nThese steps constitute the complete vacuum‑pad test as described in the manual.",
+      "latency_s": 59.67829680000432
+    },
+    "5f0f94f9a1d75ca5": {
+      "standalone_query": "What vacuum range should the pad gauge read during the test?",
+      "intent": "factual",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": false,
+      "linked_entities": [],
+      "chunk_ids": [
+        "4.1.3",
+        "6.5.5",
+        "5.3",
+        "6.5.1",
+        "7.2",
+        "3.3",
+        "8.4.3",
+        "7.1"
+      ],
+      "answer": "During the vacuum‑pad test the gauge must indicate a vacuum **between 20 in of mercury (0.68 bar) and 25 in of mercury (0.85 bar)**【4.1.3 | p.17-17】.",
+      "latency_s": 67.66377280000597
+    },
+    "9ae329676cb53349": {
+      "standalone_query": "What is the minimum distance between the pump inlet flange and the closest elbow?",
+      "intent": "factual",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": true,
+      "linked_entities": [
+        "pump"
+      ],
+      "chunk_ids": [
+        "4.2.2",
+        "4.3.3",
+        "7.2",
+        "3.2",
+        "5.1.2",
+        "4.4",
+        "8.4",
+        "6.9.1"
+      ],
+      "answer": "The manual requires that the straight length of suction pipe from the pump inlet flange to the nearest elbow be **at least four pipe diameters** [4.2.2 | p.19‑19].  \n\nNo specific warning in the excerpt directly addresses this requirement.",
+      "latency_s": 85.55141449999064
+    },
+    "6dff8767378777e4": {
+      "standalone_query": "How do I attach the dial indicators for pump-to-driver alignment?",
+      "intent": "procedural",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": true,
+      "linked_entities": [
+        "dial_indicators",
+        "driver",
+        "pump"
+      ],
+      "chunk_ids": [
+        "4.4.3",
+        "4.4.4",
+        "4.4.2",
+        "4.4",
+        "4.4.1",
+        "7.1",
+        "4.2.1",
+        "8.5"
+      ],
+      "answer": "**Procedure – Attaching the dial indicators for pump‑to‑driver alignment**\n\n1. **Prepare two dial indicators** – you need one parallel‑indicator (P) and one angular‑indicator (A). [4.4.3 | p.27-27]\n\n2. **Mount the indicators on the pump coupling half (X):**  \n   a. **Parallel indicator (P):** Attach it so that its indicator rod contacts the **perimeter of the driver coupling half (Y)**. This indicator will be used to measure parallel (offset) mis‑alignment. [4.4.3 | p.27-27]  \n   b. **Angular indicator (A):** Attach it so that its indicator rod contacts the **inner end of the driver coupling half (Y)**. This indicator will be used to measure angular mis‑alignment. [4.4.3 | p.27-27]\n\n3. **Rotate the pump coupling half (X)** to verify that each indicator’s rod stays in contact with the driver coupling half (Y) **without bottoming out**. [4.4.3 | p.27-27]\n\n4. **Adjust the indicator positions if necessary** to maintain proper contact and clearance before proceeding with alignment measurements. [4.4.3 | p.27-27]\n\n---\n\n**Relevant warnings**\n\n- No warnings in the manual specifically address the act of attaching the dial indicators themselves. (There are no relevant warnings found in the provided excerpts.)",
+      "latency_s": 74.4537775000208
+    },
+    "df6a0affa6d80e83": {
+      "standalone_query": "What are the tolerance values for pump-to-driver alignment?",
+      "intent": "factual",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": true,
+      "linked_entities": [
+        "driver",
+        "pump"
+      ],
+      "chunk_ids": [
+        "4.4.4",
+        "4.4.3",
+        "4.3.3",
+        "4.4",
+        "4.4.1",
+        "4.4.2",
+        "5.4",
+        "4.1.2"
+      ],
+      "answer": "The pump‑to‑driver (pump‑to‑motor) alignment must be set so that the shaft centers are within **3 mils offset** and the gap between the coupling halves is within **5 mils** when measured over a **10‑inch coupling**. This tolerance applies to both the vertical‑plane alignment and the horizontal‑plane alignment [4.3.3 | p.23-23].  \n\n(For parallel alignment the allowable variation is “the values given on the included coupling drawing,” but the manual specifies the numeric tolerance above for the standard 10‑inch coupling.)",
+      "latency_s": 64.06563029999961
+    },
+    "f4b3eea823196af9": {
+      "standalone_query": "What type of grout should be used for skid-mounted permanent installations?",
+      "intent": "factual",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": false,
+      "linked_entities": [
+        "grout",
+        "skid"
+      ],
+      "chunk_ids": [
+        "4.3.4",
+        "4.3.2",
+        "4.3",
+        "4.3.5",
+        "4.3.1",
+        "4.3.3",
+        "2.2.4",
+        "4.4.2"
+      ],
+      "answer": "The permanent‑installation procedure specifies that **epoxy grout** must be used when grouting the skid‑mounted unit【4.3.5 | p.24-24】.",
+      "latency_s": 50.222560900001554
+    },
+    "361536404bfdd49a": {
+      "standalone_query": "How do I start the pump?",
+      "intent": "procedural",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": true,
+      "linked_entities": [
+        "pump"
+      ],
+      "chunk_ids": [
+        "5.3",
+        "5.1.2",
+        "4.1.2",
+        "5.1",
+        "6.5.1",
+        "2.3.2",
+        "6.1",
+        "5.1.3"
+      ],
+      "answer": "**Starting the pump**\n\n1. **Open the suction valve** (if the pump is equipped with one).【5.3 | p.34-34】  \n2. **Set the discharge valve** – if the valve is present, either fully close it or open it partially, depending on the system condition.【5.3 | p.34-34】  \n3. **Start the driver**. The air‑compressor or vacuum‑pump will begin to prime the pump.【5.3 | p.34-34】  \n4. **Open the discharge valve** (if fitted) until the pump reaches the desired flow.【5.3 | p.34-34】  \n5. **Check the pressure gauge** to confirm the pump is operating at the correct discharge pressure.【5.3 | p.34-34】  \n6. **If the pump does not reach pressure**:  \n   a. Stop the driver.  \n   b. Begin troubleshooting the unit.【5.3 | p.34-34】\n\n**Relevant warnings for this procedure**\n\n- **Caution** – Observe the pump for vibration levels, bearing temperature, and excessive noise. If normal levels are exceeded, shut down the pump and resolve the issue.  \n- **Caution** – Monitor all gauges to ensure the pump is running at or near rating and that the suction screen (when used) is not clogged.  \n- **Caution** – If the unit is driven by a diesel engine, check oil level and coolant level (refer to the engine manual).  \n- **Caution** – If the unit is driven by an electric motor, follow the relevant control requirements.  \n- **Caution** – If the unit includes Field Smart Technology (FST), refer to the FST documentation.【5.3 | p.34-34】",
+      "latency_s": 22.886540600011358
+    },
+    "94c30e762eedb5fc": {
+      "standalone_query": "How do I shut down the pump?",
+      "intent": "procedural",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": true,
+      "linked_entities": [
+        "pump"
+      ],
+      "chunk_ids": [
+        "5.4",
+        "5.3",
+        "5.1.2",
+        "4.2.3",
+        "5.2",
+        "4.1.2",
+        "4.4.3",
+        "4.3.1"
+      ],
+      "answer": "**Standard shutdown procedure**\n\n1. **Slowly run the driver down until it stops.**  \n   *Citation: [5.4 | p.34-34]*  \n\n2. **Shut down and lock the driver** so it cannot rotate accidentally.  \n   *Citation: [5.4 | p.34-34]*  \n\n**If the pump is being operated with flooded‑suction conditions** (liquid source above the pump), the shutdown steps are slightly different:\n\n1. **Decrease the driver speed.**  \n2. **Stop the driver.**  \n3. **Close the inlet (suction) valve.**  \n   *Citation: [5.1.2 | p.30-30]*  \n\n**Relevant warning**\n\n- **Caution:** Observe the pump for vibration, bearing temperature, and excessive noise. If any of these exceed normal levels, **shut down the pump and resolve the issue**.  \n  *Citation: [5.3 | p.34-34]*  ",
+      "latency_s": 68.34071610000683
+    },
+    "66604d16d80fa9bd": {
+      "standalone_query": "What are the steps for operating the pump with flooded suction?",
+      "intent": "procedural",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": true,
+      "linked_entities": [
+        "flooded_suction",
+        "pump"
+      ],
+      "chunk_ids": [
+        "5.3",
+        "5.1.2",
+        "6.5.1",
+        "4.1.3",
+        "4.2.2",
+        "6.1",
+        "2.3.1",
+        "5.1"
+      ],
+      "answer": "**Steps for operating the pump with flooded suction**\n\n1. **Isolate the driver** and be certain the unit cannot be started.  \n2. **Disconnect the air line** from the priming tower.  \n3. **Select the appropriate step for the type of unit:**  \n   - *Compressor units*: disconnect the compressor belt drive.  \n   - *Vacuum pump units*: disconnect the vacuum belt drive.  \n4. **Select the appropriate step for the type of unit:**  \n   - *Compressor units*: remove the complete ejector housing and replace it with a plain blanking plate.  \n   - *Vacuum pump units*: remove the complete priming tower and replace it with a plain blanking plate.  \n5. **Verify that the blanking plate has a leak‑free seal** to the pump.  \n6. **Remove the means of isolation** from the driver.  \n7. **To start the pump with flooded suction:**  \n   a. Close the inlet (suction) valve.  \n   b. Start the driver.  \n   c. Open the inlet (suction) valve.  \n   d. Increase the driver speed.  \n8. **To stop the pump with flooded suction:**  \n   a. Decrease the driver speed.  \n   b. Stop the driver.  \n   c. Close the inlet (suction) valve.  \n\n*All steps are taken directly from the manual section “Operate the unit with the system condition of flooded suction”*【5.1.2 | p.30-30】.",
+      "latency_s": 85.3407484999916
+    },
+    "528aaa3999632f01": {
+      "standalone_query": "What are the bearing lubrication requirements?",
+      "intent": "factual",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": true,
+      "linked_entities": [
+        "bearing_lubrication"
+      ],
+      "chunk_ids": [
+        "5.1.3",
+        "8.2",
+        "6.9.1",
+        "6.5.1",
+        "6.3.1",
+        "6.4.1",
+        "8.1",
+        "6.7.3"
+      ],
+      "answer": "**Bearing‑lubrication requirements**\n\n1. **Grease the bearing brackets** – the bearings must be charged with grease at the locations shown in the “Bearing lubrication” section (see Fig. 11 and Fig. 12) and the greasing should be checked after any long period of inactivity. [5.1.3 | p.30‑31]\n\n2. **Approved bearing greases** – use one of the following greases when greasing the bearings:  \n\n   * Texaco Starplex EP2  \n   * Shell Nertia HV  \n   * Mobil SHC 46  \n   * Total Multis Complex EP2  \n   * Belesta XPG  \n   * Valvoline NLGI #2 Bearing and Chassis Lubricant  \n   * **For HL260M units only:** Rocol Sapphire Premier  \n\n   (These are the greases listed under “Bearing lubricant” in the Technical Reference.) [8.2 | p.50‑50]\n\n3. **Reference for recommended lubricants** – for the exact recommended lubricant (type, grade, quantity) and the precise greasing points, consult the Technical Reference on page 49. [5.1.3 | p.30‑31]\n\n---\n\n**Relevant warnings**\n\n* **Notice:** Check the greasing on a pump that has been out of service for a long period of time and re‑grease if necessary. [5.1.3 | p.30‑31]  \n* **Warning:** Make sure to properly lubricate the bearings. Failure to do so can result in excess heat generation, sparks, and premature failure. [5.1.3 | p.30‑31]",
+      "latency_s": 69.88839300000109
+    },
+    "b5f19427f014a9df": {
+      "standalone_query": "What is the mechanical seal coolant capacity for the HL110M?",
+      "intent": "factual",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": true,
+      "linked_entities": [
+        "mechanical_seal_coolant",
+        "hl110m"
+      ],
+      "chunk_ids": [
+        "8.2",
+        "5.1.4",
+        "7.2",
+        "6.2.2",
+        "3.2",
+        "8.1",
+        "4.1.3",
+        "3.3"
+      ],
+      "answer": "The HL110M requires **4.7 L (1.24 US gal)** of mechanical‑seal coolant. [8.2 | p.50-50]",
+      "latency_s": 91.16674139999668
+    },
+    "08903cde10c13d79": {
+      "standalone_query": "What warnings apply to the coupling?",
+      "intent": "safety",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": true,
+      "linked_entities": [
+        "coupling"
+      ],
+      "chunk_ids": [
+        "4.4",
+        "6.10.3",
+        "2.2.1",
+        "6.10.1",
+        "4.4.4",
+        "4.3.1",
+        "2.2.4",
+        "4.3.3"
+      ],
+      "answer": "**Warnings that apply to the coupling**\n\n1. **Follow shaft‑alignment procedures** – “Follow shaft alignment procedures in order to prevent catastrophic failure of drive components or unintended contact of rotating parts. Follow the coupling installation and operation procedures from the coupling manufacturer.” [4.4 | p.25-25]\n\n2. **Disconnect and lock out power before work** – “Always disconnect and lock out power to the driver before you perform any installation or maintenance tasks. Failure to disconnect and lock out driver power will result in serious physical injury.” [4.4 | p.25-25]",
+      "latency_s": 58.38008820000687
+    },
+    "c22dd46714c5b100": {
+      "standalone_query": "Does the coupling need lubrication?",
+      "intent": "factual",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": true,
+      "linked_entities": [
+        "lubrication",
+        "coupling"
+      ],
+      "chunk_ids": [
+        "5.1.3",
+        "6.5.1",
+        "8.2",
+        "4.3.1",
+        "6.10.3",
+        "6.4.1",
+        "6.10.1",
+        "5.2"
+      ],
+      "answer": "Yes. The manual specifies that the coupling must be greased. During trailer maintenance it states:\n\n*“Apply grease to the over‑run coupling greasing points.”* [6.10.3 | p.41‑41]",
+      "latency_s": 58.49496320000617
+    },
+    "75c63efd059ce798": {
+      "standalone_query": "Does the impeller need lubrication?",
+      "intent": "factual",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": true,
+      "linked_entities": [
+        "lubrication",
+        "impeller"
+      ],
+      "chunk_ids": [
+        "5.1.3",
+        "7.3",
+        "6.9.1",
+        "8.5",
+        "6.5.1",
+        "3.1",
+        "8.2",
+        "4.1.2"
+      ],
+      "answer": "The manual does not specify that the impeller itself must be lubricated. The lubrication sections address only the bearings, mechanical seal, gearbox and other components:\n\n* Section 5.1.3 “Bearing lubrication” lists the locations to grease **bearings** and includes a warning to “properly lubricate the bearings” [5.1.3 | p.30‑31].\n\n* Section 8.2 “Coolants and lubricants” provides tables of **bearing lubricants**, mechanical‑seal coolant, gearbox oil, etc., but no lubricant is listed for the impeller [8.2 | p.50‑50].\n\nNo portion of the provided excerpts mentions applying grease or oil to the impeller, nor is there a warning about impeller lubrication. Therefore, according to the supplied manual, the impeller does not require lubrication.",
+      "latency_s": 63.49581500000204
+    },
+    "4c16fcbd6f6a8916": {
+      "standalone_query": "What daily maintenance is required for the engine?",
+      "intent": "procedural",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": true,
+      "linked_entities": [
+        "maintenance",
+        "engine"
+      ],
+      "chunk_ids": [
+        "6.2.1",
+        "6.7.3",
+        "6.2.6",
+        "6.2.2",
+        "6.5.2",
+        "2.3.2",
+        "4.1.2",
+        "7.1"
+      ],
+      "answer": "**Daily engine‑maintenance tasks**\n\n- **Check the engine oil level** – Verify that the level indication on the measuring stick is within the cross‑hatch pattern or at the “FULL” mark; if low, replenish with the correct engine oil as specified by the engine manufacturer. [6.2.1 | p.35-35]\n\n- **Check the diesel fuel** – Inspect the fuel for water or contamination; if any is found, drain and clean the fuel tank. If the fuel is clean, check the fuel level and replenish as necessary. [6.2.1 | p.35-35]\n\n- **Check the radiator coolant level** – Do this after the engine has cooled. [6.2.1 | p.35-35]",
+      "latency_s": 53.90070629998809
+    },
+    "bf26efd200c81103": {
+      "standalone_query": "What maintenance is performed after the first 100 hours?",
+      "intent": "procedural",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": true,
+      "linked_entities": [
+        "maintenance"
+      ],
+      "chunk_ids": [
+        "6.3.1",
+        "6.4.1",
+        "6.7.3",
+        "6.6.1",
+        "6.8.1",
+        "5.1",
+        "7.1",
+        "5.1.2"
+      ],
+      "answer": "**Maintenance after the first 100 hours**\n\nIf the unit has an **air compressor with an integral oil supply**, the following tasks are required after the first 100 hours of operation [6.3.1 | p.36-36]:\n\n1. **Allow the compressor to cool** if it has recently been in operation.  \n2. **Drain the oil sump.**  \n3. **Fill the oil sump with a replacement lubricant.**  \n\n*For the exact lubricant type and quantity, refer to the Technical Reference on page 49.*  \n\nNo warnings in the provided excerpts specifically address this 100‑hour air‑compressor maintenance procedure.",
+      "latency_s": 47.418259899975965
+    },
+    "c7f395e30e0623f3": {
+      "standalone_query": "What maintenance is performed after the first 200 hours?",
+      "intent": "procedural",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": true,
+      "linked_entities": [
+        "maintenance"
+      ],
+      "chunk_ids": [
+        "6.4.1",
+        "6.3.1",
+        "6.7.3",
+        "6.6.1",
+        "6.2.1",
+        "5.1",
+        "7.1",
+        "5.1.2"
+      ],
+      "answer": "**Maintenance after the first 200 hours**\n\n- If the unit is equipped with a gearbox, perform a gearbox oil change:  \n  1. **Drain the oil from the gearbox.**  \n  2. **Refill the gearbox with the correct grade of oil.**  \n\nThese tasks are required after the first 200 hours of operation [6.4.1 | p.37-37].\n\n**Relevant warnings**\n\n- No warnings in the provided excerpts specifically address the gearbox oil‑change procedure after 200 hours.",
+      "latency_s": 46.96697809998295
+    },
+    "ce4cda1fc8b08159": {
+      "standalone_query": "What should I check during 250 hour pump maintenance?",
+      "intent": "procedural",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": true,
+      "linked_entities": [
+        "maintenance",
+        "pump"
+      ],
+      "chunk_ids": [
+        "6.5.5",
+        "6.2.2",
+        "6.5.1",
+        "6.1",
+        "7.1",
+        "5.1.4",
+        "6.2.1",
+        "5.1.3"
+      ],
+      "answer": "**Checks to perform during the 250‑hour pump maintenance**\n\n| Item to check | What to do |\n|---------------|------------|\n| **Drive belt** | Verify the tension and the overall condition of the drive belt; adjust the tension or replace the belt if necessary. [6.5.5 | p.38-38] |\n| **Power isolation** | Confirm that the pump is powered off and that all driver power is removed (and battery cables disconnected and tied together if the driver is a diesel engine). [6.5.1 | p.37-37] |\n| **Product drainage** | Open the volute and discharge non‑return drain valves and drain any product back to the source or into a proper spill container. [6.5.1 | p.37-37] |\n| **Piping connections** | Disconnect the pump from both suction and discharge piping. [6.5.1 | p.37-37] |\n| **General cleanliness** | Inspect the pump exterior and remove all dirt and debris; visually inspect the volute from the suction flange for obstructions and clear them. [6.5.1 | p.37-37] |\n| **Ejector assembly** | Disconnect the ejector assembly and inspect it for wear; check the condition of the O‑rings, nozzle, ball, seat, and screen, and clean the screen of any dirt or debris. [6.5.1 | p.37-37] |\n| **Discharge non‑return valve** | Remove the valve inspection cover and examine the valve ball, seat, and O‑ring seal; replace any damaged parts. [6.5.1 | p.37-37] |\n| **Bearing lubrication** | Charge the bearing bracket with grease (refer to the bearing‑lubrication section for exact locations). [6.5.1 | p.37-37] |\n| **Re‑connect power** | After the inspection/repairs, reconnect power to the driver (and reconnect the ground cable to the battery negative terminal if the driver is a diesel engine). [6.5.1 | p.37-37] |\n| **Documentation & testing** | Record serviced items and operating hours in the service log; start the pump and perform a vacuum test, recording gauge readings. [6.5.1 | p.37-37] |\n\n**Relevant safety warning**\n\n- Before disassembling the pump, opening vent or drain valves, or disconnecting piping, **make sure the internal pressure is relieved** and the pump is isolated from the system. [6.1 | p.35-35]",
+      "latency_s": 63.36268250001012
+    },
+    "ec8f0d3f71f680aa": {
+      "standalone_query": "What is checked at 5000 hours on the pump?",
+      "intent": "factual",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": true,
+      "linked_entities": [
+        "pump"
+      ],
+      "chunk_ids": [
+        "6.9.1",
+        "5.3",
+        "6.5.1",
+        "7.1",
+        "6.2.2",
+        "6.5.5",
+        "4.2.2",
+        "2.3.1"
+      ],
+      "answer": "At the 5 000‑hour service the pump is inspected for wear and damage of the following items:\n\n- **Mechanical seal** – inspected for excessive wear or damage and replaced if necessary.  \n- **Bearings** – inspected for excessive wear or damage and replaced if necessary.  \n- **Clearances between the impeller and the front and rear wear plates** – checked; if the correct clearances cannot be achieved the parts are examined for wear or damage and replaced as needed.  \n- **Shaft and the related seals** – inspected for wear or damage and replaced if necessary.  \n\nThese checks are listed in the 5 000‑hour maintenance procedure for the pump【6.9.1 | p.40-40】.",
+      "latency_s": 66.33705219998956
+    },
+    "e5229551f1c798e5": {
+      "standalone_query": "What bearing lubricant brands are recommended?",
+      "intent": "factual",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": true,
+      "linked_entities": [
+        "lubricant",
+        "bearing"
+      ],
+      "chunk_ids": [
+        "5.1.3",
+        "8.2",
+        "6.4.1",
+        "6.9.1",
+        "6.2.4",
+        "6.3.1",
+        "6.7.3",
+        "4.3.1"
+      ],
+      "answer": "The manual lists the following bearing‑lubricant brands as the recommended choices:\n\n- Texaco Starplex EP2  \n- Shell Nertia HV  \n- Mobil SHC 46  \n- Total Multis Complex EP2  \n- Belesta XPG  \n- Valvoline NLGI #2 Bearing and Chassis Lubricant  \n- **For HL260M units:** Rocol Sapphire Premier  \n\nThese brands are given in the “Bearing lubricant” section of the Technical Reference [8.2 | p.50‑50].",
+      "latency_s": 53.79156470001908
+    },
+    "c3707d6323cb7ac7": {
+      "standalone_query": "Why does the pump not prime?",
+      "intent": "troubleshoot",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": true,
+      "linked_entities": [
+        "pump"
+      ],
+      "chunk_ids": [
+        "5.1.2",
+        "5.3",
+        "4.2.3",
+        "4.2.2",
+        "7.2",
+        "6.2.2",
+        "5.1",
+        "8.5"
+      ],
+      "answer": "The manual lists the most common reasons a pump will fail to prime in the **“Pump does not prime”** troubleshooting table:\n\n| Possible cause | How the cause prevents priming |\n|----------------|--------------------------------|\n| **The pump does not create a vacuum** – the pump is not generating the suction needed to draw liquid into the inlet. | Without a vacuum the pump cannot lift liquid, so priming never occurs. [7.2 | p.42‑45] |\n| **The suction lift is too great** – the vertical distance from the liquid source to the pump exceeds the pump’s capability. | If the lift is greater than 8.5 m (28 ft) the pump cannot overcome the head, preventing priming. [7.2 | p.42‑45] |\n| **There is insufficient liquid at the suction inlet** – the source has been drained or does not provide enough liquid. | Without enough liquid at the inlet the pump cannot fill its volute and start the priming cycle. [7.2 | p.42‑45] |\n| **The suction inlet or the strainer is blocked** – debris or a clogged strainer restricts flow into the pump. | A blockage stops liquid from reaching the impeller, so the pump cannot prime. [7.2 | p.42‑45] |\n| **The separation‑tank filter is blocked** – the filter downstream of the suction line is clogged. | A blocked filter prevents liquid from reaching the pump, halting priming. [7.2 | p.42‑45] |\n| **The suction line is not air‑tight** – leaks allow air to enter the suction piping. | Air entering the line breaks the vacuum and stops the pump from drawing liquid. [7.2 | p.42‑45] |\n| **The suction pipe has collapsed** – the pipe is deformed, restricting flow. | A collapsed pipe limits or stops liquid flow to the pump, preventing priming. [7.2 | p.42‑45] |\n\nThese are the specific conditions identified in the manual that will cause a pump to fail to prime. No other warnings in the provided excerpts directly address priming failures.",
+      "latency_s": 87.12974950001808
+    },
+    "c1c8f225758ae0e5": {
+      "standalone_query": "What causes insufficient liquid delivery?",
+      "intent": "troubleshoot",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": false,
+      "linked_entities": [],
+      "chunk_ids": [
+        "7.2",
+        "7.3",
+        "5.2",
+        "5.1.1",
+        "2.3",
+        "7.1",
+        "4.2.1",
+        "4.2.2"
+      ],
+      "answer": "**Possible causes of insufficient liquid delivery (Table 2 – “Insufficient liquid is delivered”)**\n\n| Possible cause |\n|----------------|\n| The non‑return valve does not seat. |\n| The mechanical seal draws air into the pump. |\n| Compressor units only: the ejector jet or the nozzle is blocked or damaged. |\n| Compressor units only: the ejector non‑return‑valve ball is stuck. |\n| Compressor units only: compressor pipe leaks air. |\n| Compressor units only: compressor does not deliver enough air. |\n| The compressor or the vacuum‑pump drive belt is faulty. |\n| The speed of the driver is incorrect. |\n\n*Source: [7.2 | p.42‑45] – Table 2 lists these causes for “Insufficient liquid is delivered.”*",
+      "latency_s": 76.01888590000453
+    },
+    "e47c9de4af980127": {
+      "standalone_query": "Why does liquid flow cease?",
+      "intent": "troubleshoot",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": false,
+      "linked_entities": [],
+      "chunk_ids": [
+        "5.2",
+        "7.3",
+        "5.1.1",
+        "7.2",
+        "4.2.1",
+        "4.2.2",
+        "5.3",
+        "4.2.3"
+      ],
+      "answer": "Liquid flow can stop for a number of specific reasons that are listed in the troubleshooting section for “Liquid flow ceases”:\n\n| Possible cause | Why it stops the flow |\n|----------------|-----------------------|\n| **The pump does not create a vacuum** | Without the required vacuum the pump cannot draw liquid from the source, so flow ceases. |\n| **The suction lift is too great** | If the vertical distance to the source exceeds the pump’s capability (greater than 8.5 m / 28 ft) the pump cannot overcome the lift, and the liquid stops moving. |\n| **The suction inlet or the strainer is blocked** | A blockage prevents liquid from reaching the impeller, halting flow. |\n| **The separation‑tank filter is blocked** | A clogged filter restricts the suction line, stopping the liquid. |\n| **The suction line is not air‑tight** | Leaks allow air into the suction line, breaking the vacuum and ending flow. |\n| **The suction pipe has collapsed** | A collapsed pipe physically blocks the passage of liquid, causing flow to cease. |\n\nThese causes are taken directly from the “Liquid flow ceases” troubleshooting table [7.2 | p.42‑45].\n\nIn addition, the manual warns that operating a pumping system with a **blocked suction and discharge** can cause the confined fluid to overheat and even explode [5.2 | p.33‑33]. While the warning focuses on the danger of overheating, it also implies that a blocked suction (or discharge) will stop liquid movement.",
+      "latency_s": 81.29509930001223
+    },
+    "da74a2cc633a8353": {
+      "standalone_query": "What should I do if the unit vibrates or overheats?",
+      "intent": "troubleshoot",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": true,
+      "linked_entities": [
+        "unit"
+      ],
+      "chunk_ids": [
+        "6.2.1",
+        "4.1.1",
+        "5.1",
+        "6.5.3",
+        "6.1",
+        "6.9.1",
+        "6.4.1",
+        "5.1.1"
+      ],
+      "answer": "**If the unit begins to vibrate or to run hot, take the following actions (all taken directly from the manual):**\n\n1. **Observe the vibration and temperature** – the manual cautions the operator to “Observe the pump for vibration levels, bearing temperature…” [Unit – WARNS_ABOUT → [CAUTION] • Observe the pump for vibration levels, bearing temperature,…].\n\n2. **Check the installation site** – make sure the unit is on solid, level ground and that there is enough clearance around it for ventilation and to reduce unwanted noise and vibration. [4.1.1 | p.16‑16] “Take into consideration the occurrence of unwanted noise and vibration.” and “Make sure that the unit location is on solid, level ground.”\n\n3. **Inspect the motor for blockage of ventilation** – verify that the interior and exterior of the motor are free of dirt, oil, grease, water, or other debris. If debris is present, clean it because “If the motor is not properly ventilated, then overheating occurs and causes early failure.” [6.5.3 | p.38‑38] step 2.\n\n4. **Inspect the pump’s rotating components** – look at the mechanical seal, bearings, impeller‑to‑wear‑plate clearances, and shaft for excessive wear or damage, all of which can cause vibration and heat buildup. [6.9.1 | p.40‑40] bullet points for mechanical seal, bearings, clearances, and shaft.\n\n5. **Check the gearbox (if equipped)** – after the first 200 h, drain and refill the gearbox with the correct oil to ensure proper lubrication and avoid overheating. [6.4.1 | p.37‑37] steps 1‑2.\n\n6. **Verify electrical supply** – over‑loaded circuits can cause components to overheat; ensure appropriate circuit protection is in place. [5.1 | p.29‑29] and [6.1 | p.35‑35] both contain the warning “Fire hazard. Overloaded electrical circuits can cause components to overheat. Make sure to use appropriate circuit protection.”\n\n7. **If any abnormal readings are found** (e.g., motor winding resistance out of spec, phase‑to‑phase variance > 10 %), contact a qualified Xylem representative or a licensed electrician. [6.5.3 | p.38‑38] steps 3‑4.\n\n**Summary:** Stop the unit, lock‑out power, check that it is on a stable, level surface, clean the motor ventilation, inspect seals, bearings, impeller clearances and shaft for wear, verify gearbox oil and electrical protection, and seek professional assistance if measurements are out of tolerance.",
+      "latency_s": 65.16448289999971
+    },
+    "d7a76a87ec8ce372": {
+      "standalone_query": "Why is the mechanical seal coolant emulsified?",
+      "intent": "troubleshoot",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": true,
+      "linked_entities": [
+        "mechanical_seal_coolant"
+      ],
+      "chunk_ids": [
+        "5.1.4",
+        "7.2",
+        "6.2.2",
+        "8.2",
+        "4.1.3",
+        "3.1",
+        "4.2.2",
+        "5.1.2"
+      ],
+      "answer": "The manual notes that a small amount of emulsification of the mechanical‑seal oil can occur when the pump is operating under low suction‑lift (low‑condition) situations. In those conditions the oil may become slightly emulsified, and this is considered normal behavior.  \n\n**Citation:** The warning in the “Mechanical seal coolant” section states, “A slight loss of coolant under high suction lift conditions or **slight emulsification of oil under low conditions is normal**.”【5.1.4 | p.32-32】.",
+      "latency_s": 80.68506530000013
+    },
+    "9411df7321cf65d6": {
+      "standalone_query": "Why does the driver not start?",
+      "intent": "troubleshoot",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": true,
+      "linked_entities": [
+        "driver"
+      ],
+      "chunk_ids": [
+        "5.4",
+        "5.1.2",
+        "5.1",
+        "5.3",
+        "4.4.4",
+        "7.2",
+        "4.4.3",
+        "2.3.1"
+      ],
+      "answer": "The driver will not start if it is still **isolated or locked out** or if power has not been applied to it.\n\n* In the “Operate the unit with the system condition of flooded suction” procedure the first step is to **“Isolate the driver and ensure that the unit cannot be started.”** If that isolation is not removed, the driver will remain unable to start [5.1.2 | p.30‑30].  \n* Later the same procedure tells you to **“Remove the means of isolation from the driver.”** Only after this step can the driver be started [5.1.2 | p.30‑30].  \n* The manual also warns to **“Always disconnect and lock out power to the driver before you perform any installation or maintenance tasks.”** If the driver is still locked out, power is not present and it will not start [5.1 | p.29‑29] [5.1.2 | p.30‑30].\n\nTherefore, the most common reason the driver does not start is that it is still isolated/locked out or not receiving power. Make sure the isolation has been removed and that the driver is properly powered before attempting to start it.",
+      "latency_s": 80.6025586000178
+    },
+    "1ba5d9357bdff204": {
+      "standalone_query": "What causes one-sided trailer braking?",
+      "intent": "troubleshoot",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": false,
+      "linked_entities": [
+        "trailer"
+      ],
+      "chunk_ids": [
+        "7.4",
+        "6.10.2",
+        "6.10.1",
+        "2.2.4",
+        "3.1",
+        "6.10.5",
+        "2.2.2",
+        "4.2.2"
+      ],
+      "answer": "One‑sided braking on a trailer can be caused by any of the following conditions:\n\n| Possible cause |\n|----------------|\n| The brakes are adjusted unevenly. |\n| The brake cable has seized. |\n| The brake lining is contaminated with grease. |\n\nThese three items are listed as the “Possible cause” entries for the “Braking is one‑sided” fault in Table 1 of the troubleshooting section【7.4 | p.46-48】. No specific warning in the manual addresses this fault directly.",
+      "latency_s": 59.41313529998297
+    },
+    "da22917eb2424a89": {
+      "standalone_query": "What should I do if the trailer brakes lock up when reversing?",
+      "intent": "safety",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": false,
+      "linked_entities": [
+        "trailer_brakes"
+      ],
+      "chunk_ids": [
+        "7.4",
+        "6.10.1",
+        "6.10.2",
+        "2.2.3",
+        "5.1",
+        "2.2.4",
+        "2.2.2",
+        "6.10.5"
+      ],
+      "answer": "The manual’s troubleshooting section includes **Table 12 – “The trailer brakes lock up when reversing.”** It lists the possible causes of that condition and the corresponding remedial actions. However, the excerpt you provided only contains Tables 1‑4; the specific entries for Table 12 are not included in the supplied text.  \n\n**Therefore, the detailed causes and remedies for a brake lock‑up when reversing are not available in the provided context.** If you need that information, you’ll need to consult the full manual section that contains Table 12.",
+      "latency_s": 44.658405900001526
+    },
+    "d7065854dd062b13": {
+      "standalone_query": "What is the normal speed of the HL160M?",
+      "intent": "factual",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": false,
+      "linked_entities": [
+        "hl160m"
+      ],
+      "chunk_ids": [
+        "8.1",
+        "8.5",
+        "7.2",
+        "8.4.3",
+        "3.2",
+        "4.1.3",
+        "8.2",
+        "5.1.2"
+      ],
+      "answer": "The HL160M is rated for a **normal operating speed of 1800 rpm**【8.1 | p.49-49】.",
+      "latency_s": 45.4439396999951
+    },
+    "7e8070ec8904c1ac": {
+      "standalone_query": "What is the maximum flow of the HL300M?",
+      "intent": "factual",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": false,
+      "linked_entities": [],
+      "chunk_ids": [
+        "8.1",
+        "3.2",
+        "4.2.1",
+        "4.2.2",
+        "5.2",
+        "8.5",
+        "4.2.3",
+        "2.2.2"
+      ],
+      "answer": "The manual excerpts you provided list the maximum‑flow ratings for HL‑type pumps up to the HL‑270M, but there is no entry for an HL‑300M in the “Maximum flow” table (see the table in [8.1 | p.49‑49]). Therefore the maximum flow for an HL‑300M is not given in the supplied context.",
+      "latency_s": 82.76199050000287
+    },
+    "57e6d42098105afe": {
+      "standalone_query": "What is the torque value for an M12 steel bolt?",
+      "intent": "factual",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": true,
+      "linked_entities": [
+        "steel"
+      ],
+      "chunk_ids": [
+        "8.3",
+        "8.4.3",
+        "4.3.4",
+        "8.5",
+        "8.1",
+        "4.3.2",
+        "3.1",
+        "4.4.1"
+      ],
+      "answer": "The torque specification for an M12 × 1.75 steel bolt (nuts and bolts) is **98 Nm (72 lbf·ft)**【8.3 | p.51-51】.",
+      "latency_s": 77.90299549998599
+    },
+    "cac6d713706bd66e": {
+      "standalone_query": "What is the impeller-to-wear-plate clearance for cast iron parts?",
+      "intent": "factual",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 1,
+      "used_graph": true,
+      "linked_entities": [
+        "impeller",
+        "iron"
+      ],
+      "chunk_ids": [
+        "8.5",
+        "6.9.1",
+        "3.1",
+        "2.3.1",
+        "8.3",
+        "5.1.3",
+        "3.3",
+        "4.2.2"
+      ],
+      "answer": "For the HL80M pump model, the required clearance between the impeller and the front (or rear) wear plate when both are made of cast‑iron (or cast steel or hard‑iron) is 0.500 mm to 0.625 mm (0.020 in to 0.025 in). This specification is given in Table 20 of the manual and applies to that model; the manual does not provide a single universal clearance value for all cast‑iron parts.",
+      "latency_s": 116.58947439998155
+    },
+    "cb96fc3e7414bda9": {
+      "standalone_query": "What are the air compressor oil requirements?",
+      "intent": "factual",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": false,
+      "linked_entities": [
+        "air_compressor_oil"
+      ],
+      "chunk_ids": [
+        "6.3.1",
+        "8.2",
+        "6.6.1",
+        "6.2.4",
+        "6.5.4",
+        "6.8.1",
+        "6.7.1",
+        "6.5.2"
+      ],
+      "answer": "The manual lists the oil capacity and the specific oil that must be used for each compressor model that has an integral oil sump:\n\n| Compressor model | Oil capacity | Required oil (type) |\n|------------------|--------------|---------------------|\n| Quincy 216 | 1.42 L (0.375 US gal) | Quin‑Cip SAE 20W/ISO 68 **or equivalent** |\n| Quincy 240 | 1.42 L (0.375 US gal) | Quin‑Cip SAE 20W/ISO 68 **or equivalent** |\n| Quincy 270 | 4.50 L (1.18 US gal) | Quin‑Cip SAE 20W/ISO 68 **or equivalent** |\n\nThese values are taken directly from Table 1 in the “Air compressor lubricant” section of the Technical Reference [8.2 | p.50‑50].",
+      "latency_s": 54.85121059999801
+    },
+    "4b6fdd019785e1f5": {
+      "standalone_query": "Which HL model has the highest maximum pressure?",
+      "intent": "comparison",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": false,
+      "linked_entities": [],
+      "chunk_ids": [
+        "3.2",
+        "8.1",
+        "3.3",
+        "8.5",
+        "8.4.3",
+        "8.2",
+        "7.1",
+        "5.3"
+      ],
+      "answer": "The HL 270M model is rated for the highest discharge pressure – 42 bar (618 psi) 【3.2 | p.13-13】. This is confirmed in the design‑specifications table, which also lists HL 270M with a maximum pressure of 42 bar (618 psi) 【8.1 | p.49-49】.",
+      "latency_s": 75.06896489998326
+    },
+    "3b921998d581ea43": {
+      "standalone_query": "Which HL model has the highest maximum flow?",
+      "intent": "comparison",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": false,
+      "linked_entities": [],
+      "chunk_ids": [
+        "8.1",
+        "3.2",
+        "8.5",
+        "4.2.1",
+        "3.3",
+        "4.2.2",
+        "8.2",
+        "5.2"
+      ],
+      "answer": "The HL 260M model has the highest listed maximum flow, rated at **1260 m³/hr (5550 US gpm)**【8.1 | p.49-49】.",
+      "latency_s": 86.48281210000277
+    },
+    "7e6b1a644b8d8ef6": {
+      "standalone_query": "What is the capital of France?",
+      "intent": "out_of_scope",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": false,
+      "linked_entities": [],
+      "chunk_ids": [],
+      "answer": "This question is outside the scope of the HL Series pump manual. I can only answer questions about the pump, its operation, maintenance, and safety.",
+      "latency_s": 9.277556900022319
+    },
+    "a562a558ada670a5": {
+      "standalone_query": "How do I reset my email password?",
+      "intent": "out_of_scope",
+      "verified": true,
+      "verify_issue_count": 0,
+      "retry_count": 0,
+      "used_graph": false,
+      "linked_entities": [],
+      "chunk_ids": [],
+      "answer": "This question is outside the scope of the HL Series pump manual. I can only answer questions about the pump, its operation, maintenance, and safety.",
+      "latency_s": 6.9841782999865245
+    }
+  },
+  "updated_at": "2026-10-30T17:19:42"
+}

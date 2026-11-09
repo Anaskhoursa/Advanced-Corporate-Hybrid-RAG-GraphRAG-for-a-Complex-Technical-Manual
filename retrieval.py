@@ -121,6 +121,9 @@ class RetrievalResult:
     steps: list[dict] = field(default_factory=list)
     used_graph: bool = False
     context: str = ""
+    # NEW: provenance, required for the graph-contribution metric
+    vector_chunk_ids: list[str] = field(default_factory=list)
+    graph_chunk_ids: list[str] = field(default_factory=list)
 
 
 # ---------------------------------------------------------------------------
@@ -788,11 +791,14 @@ class GraphRAGPipeline:
         self.searcher = HybridSearcher(self.qdrant)
         self.expander = GraphExpander(self.driver)
         
-    def retrieve(self, query: str, graph_weight: float | None = None) -> RetrievalResult:
+    def retrieve(self, query: str, graph_weight: float | None = None) -> tuple[RetrievalResult, str]:
         """Retrieval only — no LLM call. Optionally override the graph weight."""
         linked_entities = self.linker.link(query, drop_properties=True)
         top20, query_vec = self.searcher.search(query, limit=TOP20)
         top20 = [c for c in top20 if not _is_toc_or_front_matter(c)]
+
+        vector_chunk_ids = [str(c["chunk_id"]) for c in top20]
+        graph_chunk_ids: list[str] = []
 
         relations, warnings, steps = [], [], []
         warnings_by_chunk, steps_by_chunk = {}, {}
@@ -801,7 +807,6 @@ class GraphRAGPipeline:
             final_chunks = top20[:FINAL_TOP_K]
             used_graph = False
         else:
-            vector_chunk_ids = [c["chunk_id"] for c in top20]
             expansion = self.expander.expand(
                 linked_entities,
                 retrieved_chunk_ids=vector_chunk_ids,
@@ -814,6 +819,7 @@ class GraphRAGPipeline:
                 self.qdrant, graph_candidate_ids, query_vec,
             )
             graph_candidates = [gc for gc in graph_candidates if not _is_toc_or_front_matter(gc)]
+            graph_chunk_ids = [str(gc["chunk_id"]) for gc in graph_candidates]
 
             if graph_weight is None:
                 graph_weight = compute_graph_weight(linked_entities)
@@ -826,6 +832,7 @@ class GraphRAGPipeline:
             graph_selected = graph_candidates[:n_graph]
             graph_selected_ids = {str(c["chunk_id"]) for c in graph_selected}
             final_chunks = top20[: FINAL_TOP_K - n_graph] + graph_selected
+
             selected_ids = {str(c["chunk_id"]) for c in final_chunks}
             if len(final_chunks) < FINAL_TOP_K:
                 for candidate in top20:
@@ -852,14 +859,16 @@ class GraphRAGPipeline:
         return RetrievalResult(
             query=query,
             linked_entities=linked_entities,
-            chunk_ids=[c["chunk_id"] for c in final_chunks],
+            chunk_ids=[str(c["chunk_id"]) for c in final_chunks],
             chunks=final_chunks,
             relations=relations,
             warnings=warnings,
             steps=steps,
             used_graph=used_graph,
+            context=context,
+            vector_chunk_ids=vector_chunk_ids,
+            graph_chunk_ids=graph_chunk_ids,
         ), context
-
 
     def generate(self, query: str, context: str) -> str:
         return generate_answer(query, context)
