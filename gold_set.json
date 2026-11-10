@@ -272,7 +272,7 @@
   {
     "id": "q28",
     "question": "Does it need lubrication?",
-    "category": "followup",
+    "category": "factual",
     "answerable": true,
     "expected_chunks": ["6.10.3"],
     "required_facts": [],
@@ -283,7 +283,7 @@
   {
     "id": "q29",
     "question": "What about the impeller?",
-    "category": "followup",
+    "category": "factual",
     "answerable": true,
     "expected_chunks": ["6.9.1"],
     "required_facts": [],
@@ -504,7 +504,7 @@
   {
     "id": "q51",
     "question": "What is the capital of France?",
-    "category": "off_topic",
+    "category": "out_of_scope",
     "answerable": false,
     "expected_chunks": [],
     "required_facts": [],
@@ -514,7 +514,7 @@
   {
     "id": "q52",
     "question": "How do I reset my email password?",
-    "category": "off_topic",
+    "category": "out_of_scope",
     "answerable": false,
     "expected_chunks": [],
     "required_facts": [],
@@ -524,7 +524,7 @@
   {
     "id": "g01",
     "question": "In which sections does the manual require disconnecting and locking out power before work?",
-    "category": "global",
+    "category": "factual",
     "answerable": true,
     "expected_chunks": ["2.2.1", "4.4", "5.1", "5.1.2", "6.1", "7.1"],
     "required_facts": [],
@@ -534,7 +534,7 @@
   {
     "id": "g02",
     "question": "Where does the manual warn about fire hazards from overloaded electrical circuits?",
-    "category": "global",
+    "category": "factual",
     "answerable": true,
     "expected_chunks": ["4.1.1", "5.1", "6.1"],
     "required_facts": [],
@@ -544,7 +544,7 @@
   {
     "id": "g03",
     "question": "Which sections warn against throttling the flow from the suction side?",
-    "category": "global",
+    "category": "factual",
     "answerable": true,
     "expected_chunks": ["4.2.1", "4.2.2", "5.2"],
     "required_facts": [],
@@ -554,7 +554,7 @@
   {
     "id": "g04",
     "question": "Where does the manual warn about exposing an idle pump to freezing conditions?",
-    "category": "global",
+    "category": "factual",
     "answerable": true,
     "expected_chunks": ["2.3", "5.2"],
     "required_facts": [],
@@ -564,7 +564,7 @@
   {
     "id": "g05",
     "question": "Which sections tell you to let components cool before handling them?",
-    "category": "global",
+    "category": "factual",
     "answerable": true,
     "expected_chunks": ["6.1", "7.1"],
     "required_facts": [],
@@ -574,7 +574,7 @@
   {
     "id": "g06",
     "question": "Where does the manual warn about applying pressure or compressed air to test for leaks?",
-    "category": "global",
+    "category": "factual",
     "answerable": true,
     "expected_chunks": ["4.1.3", "6.1", "7.1"],
     "required_facts": [],

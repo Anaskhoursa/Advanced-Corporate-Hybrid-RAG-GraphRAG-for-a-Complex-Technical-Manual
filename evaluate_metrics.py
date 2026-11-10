@@ -27,6 +27,17 @@ from pathlib import Path
 
 
 # ---------------------------------------------------------------------------
+# Label Mapping (fixes the schema mismatch)
+# ---------------------------------------------------------------------------
+
+GOLD_TO_PRED = {
+    "followup":   "factual",
+    "global":     "factual",
+    "off_topic":  "out_of_scope",
+}
+
+
+# ---------------------------------------------------------------------------
 # IO
 # ---------------------------------------------------------------------------
 
@@ -221,7 +232,11 @@ def main():
         row = {**entry}
         row["relevant_chunk_ids"] = gold.get("expected_chunks") or []
         row["required_facts"] = gold.get("required_facts") or []
-        row["expected_intent"] = gold.get("category")
+        
+        # FIX: Apply the label mapping here
+        raw_cat = gold.get("category")
+        row["expected_intent"] = GOLD_TO_PRED.get(raw_cat, raw_cat)
+        
         row["answerable"] = bool(gold.get("answerable", True))
         row["human_verified"] = bool(gold.get("verified", False))
         rows_all.append(row)
@@ -280,7 +295,6 @@ def main():
 
     # ---- §4 Graph contribution ----
     # (a) Per-question delta between natural and baseline at the same k.
-    #     Pair rows by gold_id.
     base_by_id = {r["gold_id"]: r for r in rows_baseline if r.get("gold_id")}
     nat_by_id = {r["gold_id"]: r for r in rows_natural if r.get("gold_id")}
     paired = [(nat_by_id[g], base_by_id[g]) for g in nat_by_id if g in base_by_id
@@ -321,7 +335,7 @@ def main():
 
     # (b) Gold attribution: natural-run vector_chunk_ids / graph_chunk_ids
     attribution = {"vector_only": 0, "graph_only": 0, "both": 0,
-                   "neither": 0, "n": 0}
+                   "neither": 0, "n": 0, "missed_ids": []}
     for r in rows_natural:
         gold = set(str(x) for x in (r.get("relevant_chunk_ids") or []))
         if not gold:
@@ -339,6 +353,8 @@ def main():
             attribution["graph_only"] += 1
         else:
             attribution["neither"] += 1
+            if r.get("gold_id"):
+                attribution["missed_ids"].append(r["gold_id"])
 
     # ---- §5 Grounding and safety (natural runs) ----
     successful = [r for r in rows_natural if not r.get("error")]
@@ -510,6 +526,8 @@ def main():
     W(f"- Gold chunk recovered by graph only:  **{attr['graph_only']}**")
     W(f"- Gold chunk recovered by both:        **{attr['both']}**")
     W(f"- Gold chunk recovered by neither:     **{attr['neither']}**")
+    if attr["missed_ids"]:
+        W(f"  - Failed entirely: {', '.join(attr['missed_ids'])}")
     W(f"- Total attributed questions: {attr['n']}")
     W("")
     delta = r["graph_contribution"]["delta"]

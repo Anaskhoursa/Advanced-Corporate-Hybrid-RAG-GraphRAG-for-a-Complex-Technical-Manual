@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T22:26:58",
+  "generated_at": "2026-11-10T14:40:24",
   "gold_set": "gold_set.json",
   "cache": "eval_cache.json",
   "top_k": [
@@ -18,10 +18,10 @@
   },
   "intent_classification": {
     "count": 58,
-    "accuracy": 0.7413793103448276,
-    "macro_precision": 0.5142045454545454,
-    "macro_recall": 0.5521978021978022,
-    "macro_f1": 0.527281746031746,
+    "accuracy": 0.8103448275862069,
+    "macro_precision": 0.8661616161616161,
+    "macro_recall": 0.8644688644688645,
+    "macro_f1": 0.8601851851851852,
     "per_class": {
       "comparison": {
         "support": 2,
@@ -30,34 +30,16 @@
         "f1": 1.0
       },
       "factual": {
-        "support": 18,
-        "precision": 0.75,
-        "recall": 1.0,
-        "f1": 0.8571428571428571
-      },
-      "followup": {
-        "support": 2,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0
-      },
-      "global": {
-        "support": 6,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0
-      },
-      "off_topic": {
-        "support": 2,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0
+        "support": 26,
+        "precision": 0.8333333333333334,
+        "recall": 0.7692307692307693,
+        "f1": 0.8
       },
       "out_of_scope": {
-        "support": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0
+        "support": 2,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
       },
       "procedural": {
         "support": 13,
@@ -82,9 +64,6 @@
       "comparison": {
         "comparison": 2,
         "factual": 0,
-        "followup": 0,
-        "global": 0,
-        "off_topic": 0,
         "out_of_scope": 0,
         "procedural": 0,
         "safety": 0,
@@ -92,55 +71,16 @@
       },
       "factual": {
         "comparison": 0,
-        "factual": 18,
-        "followup": 0,
-        "global": 0,
-        "off_topic": 0,
+        "factual": 20,
         "out_of_scope": 0,
         "procedural": 0,
-        "safety": 0,
-        "troubleshoot": 0
-      },
-      "followup": {
-        "comparison": 0,
-        "factual": 1,
-        "followup": 0,
-        "global": 0,
-        "off_topic": 0,
-        "out_of_scope": 0,
-        "procedural": 0,
-        "safety": 1,
-        "troubleshoot": 0
-      },
-      "global": {
-        "comparison": 0,
-        "factual": 1,
-        "followup": 0,
-        "global": 0,
-        "off_topic": 0,
-        "out_of_scope": 0,
-        "procedural": 0,
-        "safety": 5,
-        "troubleshoot": 0
-      },
-      "off_topic": {
-        "comparison": 0,
-        "factual": 0,
-        "followup": 0,
-        "global": 0,
-        "off_topic": 0,
-        "out_of_scope": 2,
-        "procedural": 0,
-        "safety": 0,
+        "safety": 6,
         "troubleshoot": 0
       },
       "out_of_scope": {
         "comparison": 0,
         "factual": 0,
-        "followup": 0,
-        "global": 0,
-        "off_topic": 0,
-        "out_of_scope": 0,
+        "out_of_scope": 2,
         "procedural": 0,
         "safety": 0,
         "troubleshoot": 0
@@ -148,9 +88,6 @@
       "procedural": {
         "comparison": 0,
         "factual": 1,
-        "followup": 0,
-        "global": 0,
-        "off_topic": 0,
         "out_of_scope": 0,
         "procedural": 11,
         "safety": 1,
@@ -159,9 +96,6 @@
       "safety": {
         "comparison": 0,
         "factual": 3,
-        "followup": 0,
-        "global": 0,
-        "off_topic": 0,
         "out_of_scope": 0,
         "procedural": 0,
         "safety": 4,
@@ -170,9 +104,6 @@
       "troubleshoot": {
         "comparison": 0,
         "factual": 0,
-        "followup": 0,
-        "global": 0,
-        "off_topic": 0,
         "out_of_scope": 0,
         "procedural": 0,
         "safety": 0,
@@ -180,7 +111,7 @@
       }
     }
   },
-  "out_of_scope_precision": null,
+  "out_of_scope_precision": 1.0,
   "retrieval_natural": {
     "evaluated_questions": 56,
     "k=5": {
@@ -231,7 +162,10 @@
       "graph_only": 0,
       "both": 0,
       "neither": 1,
-      "n": 56
+      "n": 56,
+      "missed_ids": [
+        "q06"
+      ]
     }
   },
   "grounding": {
