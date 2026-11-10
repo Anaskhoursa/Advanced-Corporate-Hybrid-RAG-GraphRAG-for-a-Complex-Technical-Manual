@@ -28,8 +28,7 @@ output.txt
 text.json
 tables_mapped.json
 
-# Manuals are user-provided and may be copyrighted
-manuals/*.pdf
+
 
 # OS / editor files
 .DS_Store
