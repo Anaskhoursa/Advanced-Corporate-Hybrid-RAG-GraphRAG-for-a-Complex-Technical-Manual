@@ -45,7 +45,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-CHUNKS_PATH = "all_chunks.json"
+CHUNKS_PATH = "data/all_chunks.json"
 
 
 # Qdrant Cloud:

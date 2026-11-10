@@ -750,6 +750,6 @@ def run_repl(graph):
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
-    pipeline = GraphRAGPipeline(entities_path="entities.json")
+    pipeline = GraphRAGPipeline(entities_path="data/entities.json")
     graph = build_graph(pipeline)
     run_repl(graph)

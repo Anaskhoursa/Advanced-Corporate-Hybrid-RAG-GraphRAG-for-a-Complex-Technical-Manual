@@ -967,7 +967,7 @@ class GraphRAGPipeline:
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
-    pipeline = GraphRAGPipeline(entities_path="entities.json")
+    pipeline = GraphRAGPipeline(entities_path="data/entities.json")
 
     test_queries = [
         "How do I configure the pump for flooded suction operation, and what safety precautions apply?",

@@ -24,10 +24,10 @@ import json
 from pathlib import Path
 
 
-CHUNKS_FILE = "all_chunks.json"
-TABLES_FILE = "tables.json"
-OUT_CHUNKS = "all_chunks.json"
-OUT_MAPPED = "tables_mapped.json"
+CHUNKS_FILE = "data/all_chunks.json"
+TABLES_FILE = "data/tables.json"
+OUT_CHUNKS = "data/all_chunks.json"
+OUT_MAPPED = "data/tables_mapped.json"
 
 
 # ---------------------------------------------------------------------------

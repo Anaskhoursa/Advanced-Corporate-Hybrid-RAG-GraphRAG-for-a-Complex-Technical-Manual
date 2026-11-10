@@ -67,9 +67,9 @@ services:
     command: >
       bash -lc "
         echo '--- Ingesting chunks into Qdrant ---' &&
-        python index_qdrant.py &&
+        python scripts/index_qdrant.py &&
         echo '--- Ingesting entities/relations into Neo4j ---' &&
-        python import_neo4j.py --wipe &&
+        python scripts/import_neo4j.py --wipe &&
         echo '--- Bootstrap complete ---'
       "
 

@@ -209,8 +209,8 @@ def retrieval_metrics(retrieved_ids, relevant_ids, k):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--cache", default="eval_cache.json")
-    parser.add_argument("--gold", default="gold_set.json")
+    parser.add_argument("--cache", default="data/eval_cache.json")
+    parser.add_argument("--gold", default="data/gold_set.json")
     parser.add_argument("--top-k", nargs="+", type=int, default=[5, 8])
     parser.add_argument("--out-dir", default="evaluation_results")
     args = parser.parse_args()

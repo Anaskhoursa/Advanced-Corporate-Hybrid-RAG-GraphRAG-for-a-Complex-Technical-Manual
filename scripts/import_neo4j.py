@@ -73,8 +73,8 @@ NEO4J_PASSWORD = os.environ.get("NEO4J_PASSWORD", "Anas2004")
 if not NEO4J_PASSWORD:
     raise RuntimeError("NEO4J_PASSWORD environment variable is not set.")
 
-ENTITIES_FILE = "entities.json"
-RELATIONS_FILE = "relations.json"
+ENTITIES_FILE = "data/entities.json"
+RELATIONS_FILE = "data/relations.json"
 
 # Types that get grouped into the warning sub-community of a chunk.
 WARNING_TYPE = "WARNING"

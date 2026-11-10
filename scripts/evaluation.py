@@ -32,8 +32,8 @@ from retrieval import GraphRAGPipeline, GROQ_API_KEY
 # ---------------------------------------------------------------------------
 
 CACHE_VERSION = 4  # bumped: per-question graph weight, natural + baseline
-DEFAULT_CACHE_PATH = "eval_cache.json"
-DEFAULT_GOLD_SET = "gold_set.json"
+DEFAULT_CACHE_PATH = "data/eval_cache.json"
+DEFAULT_GOLD_SET = "data/gold_set.json"
 
 MAX_RETRIES = 1
 MIN_ANSWER_CHARS = 40
@@ -922,7 +922,7 @@ def main():
     parser.add_argument("--clear-cache", action="store_true")
     args = parser.parse_args()
 
-    pipeline = GraphRAGPipeline(entities_path="entities.json")
+    pipeline = GraphRAGPipeline(entities_path="data/entities.json")
     graph = build_graph(pipeline)
 
     if args.batch:

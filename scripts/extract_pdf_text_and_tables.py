@@ -23,12 +23,12 @@ with pdfplumber.open("manuals/hl_series_iom.pdf") as pdf:
             extracted_tables[f"page_{page_num}"] = tables
 
 # Save text content to text.json
-with open("text.json", "w", encoding="utf-8") as text_file:
+with open("data/text.json", "w", encoding="utf-8") as text_file:
     json.dump(extracted_text, text_file, ensure_ascii=False, indent=4)
 
 # Save table matrices to tables.json
-with open("tables.json", "w", encoding="utf-8") as tables_file:
+with open("data/tables.json", "w", encoding="utf-8") as tables_file:
     json.dump(extracted_tables, tables_file, ensure_ascii=False, indent=4)
 
-Path("output.txt").write_text("\n\n".join(plain_text_pages), encoding="utf-8")
+Path("data/output.txt").write_text("\n\n".join(plain_text_pages), encoding="utf-8")
 print("Extraction complete! Saved output.txt, text.json, and tables.json.")

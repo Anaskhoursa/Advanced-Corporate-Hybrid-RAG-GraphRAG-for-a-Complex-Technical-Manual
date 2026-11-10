@@ -18,8 +18,8 @@ import json
 import re
 from pathlib import Path
 
-SRC = "output.txt"
-OUT = "chunks.json"
+SRC = "data/output.txt"
+OUT = "data/chunks.json"
 
 TOC_LINE_RE = re.compile(r"^(\d+(?:\.\d+)*)\s+(.*?)\.{3,}\s*(\d+)\s*$")
 PAGE_MARKER_RE = re.compile(r"^--- PAGE (\d+) ---\s*$")

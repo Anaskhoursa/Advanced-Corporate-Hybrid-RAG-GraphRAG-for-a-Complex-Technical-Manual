@@ -30,11 +30,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-CHUNKS_FILE = "all_chunks.json"
-OUTPUT_ENTITIES = "entities.json"
-OUTPUT_RELATIONS = "relations.json"
-OUTPUT_WARNINGS = "warnings.json"
-OUTPUT_STEPS = "steps.json"
+CHUNKS_FILE = "data/all_chunks.json"
+OUTPUT_ENTITIES = "data/entities.json"
+OUTPUT_RELATIONS = "data/relations.json"
+OUTPUT_WARNINGS = "data/warnings.json"
+OUTPUT_STEPS = "data/steps.json"
 
 CACHE_DIR = Path(os.getenv("LLM_CACHE_DIR", ".llm_cache"))
 CACHE_ENABLED = os.getenv("LLM_CACHE", "1") != "0"
